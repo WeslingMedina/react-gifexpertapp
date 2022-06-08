@@ -1,5 +1,6 @@
 *{
   font-family: Helvetica, Arial, sans-serif;
+  margin: 0 auto;
 }
 
 body{
@@ -34,4 +35,12 @@ input{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 560px;
+  gap: 20px;
 }
