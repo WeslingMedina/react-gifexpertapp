@@ -20,6 +20,8 @@ const AddCategory = ({setCategories}) => {
 
     return (
         <form onSubmit={handleSubmit}>
+            {/* usado para asegurarnos que en las pruebas cuando simulamos el change este inputValue realmente este cambiando */}
+            <p>{inputValue}</p>
             <input
                 type="text"
                 value={inputValue}

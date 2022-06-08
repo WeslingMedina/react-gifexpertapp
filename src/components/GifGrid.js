@@ -3,6 +3,7 @@ import react, {useEffect, useState} from 'react';
 // import { getGifs } from '../helpers/getGifs';
 import GifGridItem from './GifGridItem';
 import {useFetchGifs} from '../hooks/useFetchGifs';
+import PropTypes from 'prop-types';
 
 const GifGrid = ({category}) => {
     //este state es movido al useFetchGifs
@@ -63,5 +64,8 @@ const GifGrid = ({category}) => {
     );
 }
 
+GifGrid.propTypes = {
+    category: PropTypes.string.isRequired
+}
 
 export default GifGrid;
